@@ -1,0 +1,92 @@
+body {
+	font-family: 'Source Code Pro', monospace;
+	color: #000;
+}
+
+h1 {
+	margin: 5px 0;
+	font-size: 32px;
+	font-weight: 300;
+	letter-spacing: 2.7px;
+}
+
+h2 {
+	margin: 10px 0;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+li {
+	margin: 5px 0;
+}
+
+a {
+	font-size: 28px;
+	letter-spacing: 2.7px;
+}
+
+.container {
+	margin: 10% auto;
+	text-align: center;
+}
+
+.container_view {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.blue {
+	color: #666;
+}
+
+.blue:hover {
+	color: #21AAAA;
+}
+
+.green {
+	color: #666;
+}
+
+.green:hover {
+	color: #2AAA21;
+}
+
+.orange {
+	color: #666;
+}
+
+.orange:hover {
+	color: #AA7821;
+}
+
+.list {
+	text-decoration: none;
+}
+
+.list:hover {
+	font-weight: bold;
+}
+
+.list-active {
+	font-weight: bold;
+}
+
+.links {
+	display: inline-block;
+	margin: 0 auto;
+	text-align: left;
+	background: rgba(0,0,0,.1);;
+	padding: .5em 1em;
+}
+
+#space {
+	background: #fff;
+	height: 1px;
+	margin: 5px 0;
+}
