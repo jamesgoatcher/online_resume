@@ -1,1 +1,1 @@
-Please visit https://jamesgoatcher-resume.herokuapp.com to view my online resume.
+Please visit http://private-crank-64614.bitballoon.com to view my online resume.
