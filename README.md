@@ -1,4 +1,4 @@
-#James Goatcher Web Portfolio
+#JAMES GOATCHER // WEB PORTFOLIO
 
 ##www.jamesgoatcher.co
 
