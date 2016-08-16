@@ -53,7 +53,7 @@ a {
 
 .line {
 	transition: background 1s;
-	font-size: 12px;
+	font-size: 16px;
 }
 
 .line:hover {
@@ -63,7 +63,7 @@ a {
 .list {
 	text-decoration: none;
 	color: #555;
-	font-size: 12px;
+	font-size: 16px;
 }
 
 .links {
@@ -72,7 +72,7 @@ a {
 	text-align: center;
 	background: #ddd;
 	padding: 2em 0;
-	width: 500px;
+	width: 650px;
 }
 
 .list-p {
@@ -107,6 +107,12 @@ a {
 
 .div-bottom:hover {
 	font-weight: bolder;
+}
+
+.list-small {
+	text-decoration: none;
+	color: #555;
+	font-size: 12px;
 }
 
 /*LANGUAGES*/
