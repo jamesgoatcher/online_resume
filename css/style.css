@@ -53,7 +53,7 @@ a {
 
 .line {
 	transition: background 1s;
-	font-size: 10px;
+	font-size: 12px;
 }
 
 .line:hover {
@@ -63,7 +63,7 @@ a {
 .list {
 	text-decoration: none;
 	color: #555;
-	font-size: 10px;
+	font-size: 12px;
 }
 
 .links {
@@ -99,6 +99,14 @@ a {
 
 .port-div-slide {
 	display: none;
+}
+
+.div-bottom {
+	padding-top: 1.5em;
+}
+
+.div-bottom:hover {
+	font-weight: bolder;
 }
 
 /*LANGUAGES*/
@@ -222,6 +230,14 @@ a {
 	border-left: 1px solid #000;
 }
 
+.padding-top {
+	padding-top: 2em;
+}
+
+.padding-bottom {
+	padding-bottom: 2em;
+}
+
 /*MEDIA QUERIES - iPad and below*/
 @media (max-width: 770px) {
 
@@ -294,6 +310,19 @@ a {
 	.tech-list {
 		color: #555;
 		padding: 10px!important;
+	}
+
+	.hover {
+	}
+
+	.hover:hover {
+		color: #000;
+		border-top: 0;
+		border-bottom: 1px solid #000;
+	}
+
+	.div-bottom {
+		padding-top: 2em;
 	}
 
 	img {
