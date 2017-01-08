@@ -3,7 +3,7 @@
 ##www.jamesgoatcher.co
 
 ###CONTENT:
-- Resume
+- Branding and development
 - Language and framework fluency
 - Software and hardware expertise
 - Relevant social network links (Github & LinkedIn)
@@ -11,9 +11,8 @@
 - Portfolio Piece #2: Magic: The Gathering Deck Builder (MEAN)
 - Portfolio Piece #3: Gluebox (Ruby on Rails)
 - Portfolio Piece #4: Tic Tac Toe (JavaScript/jQuery)
+- Portfolio Piece #5: Programmatic Advertising Creatives
 
-###NOTABLE FEATURES:
-- Responsive design that provides the appropriate look and function based on desktop or mobile navigation
-- Portfolio links are hidden using jQuery slideToggle to preserve a minimal design approach
-- Portfolio descriptions contain high level overview of the app as well as noteworthy tags to monitor
-- Consistent styling that makes use of James Goatcher's favorite color scheme: black/gray/white
+###NOTICE:
+- Mobile disabled until built
+- Beta stage but live
