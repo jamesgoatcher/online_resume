@@ -1,0 +1,337 @@
+/*INDEX*/
+body {
+	font-family: 'Source Code Pro', monospace;
+	color: #000;
+}
+
+h1 {
+	margin: 0;
+	font-size: 28px;
+	font-weight: bolder;
+}
+
+h2 {
+	margin: 2em 0;
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 2.7px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+li {
+	margin: 0;
+	padding: 1em 0;
+}
+
+li:first-child {
+	padding: 2em 0 1em 0;
+}
+
+li:last-child {
+	padding: 1em 0 2em 0;
+}
+
+a {
+	font-size: 16px;
+	letter-spacing: 2.7px;
+}
+
+.container {
+	margin: 2.5% auto;
+	text-align: center;
+}
+
+.container_view {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.line {
+	transition: background 1s;
+	font-size: 16px;
+}
+
+.line:hover {
+	background: #d1d1d1;
+}
+
+.list {
+	text-decoration: none;
+	color: #555;
+	font-size: 16px;
+}
+
+.links {
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	background: #ddd;
+	padding: 2em 0;
+	width: 650px;
+}
+
+.list-p {
+	font-size: 10px;
+	max-width: 400px;
+	text-align: center;
+	margin: 5px auto;
+}
+
+.center {
+	text-align: center;
+	display: block;
+}
+
+#space {
+	background: #fff;
+	height: 5px;
+	margin: 0;
+}
+
+.port-div strong {
+	cursor: pointer;
+}
+
+.port-div-slide {
+	display: none;
+}
+
+.div-bottom {
+	padding-top: 1.5em;
+}
+
+.div-bottom:hover {
+	font-weight: bolder;
+}
+
+.list-small {
+	text-decoration: none;
+	color: #555;
+	font-size: 12px;
+}
+
+/*LANGUAGES*/
+#lang-h1 {
+	font-size: 34px;
+	padding-bottom: 1em;
+}
+
+.lang-list {
+	color: #555;
+	padding: 1em 10em!important;
+}
+
+#lang-space {
+	background: #fff;
+	height: 5px;
+	margin: 0 0 1em;
+}
+
+#lang-space2 {
+	background: #fff;
+	height: 5px;
+	margin: 1em 0 1.5em;
+}
+
+#lang-link {
+	text-decoration: none;
+	color: #555;
+	padding: 0 10em;
+}
+
+#lang-link:hover {
+	color: #000;
+	font-weight: bolder;
+}
+
+/*TECHNOLOGIES*/
+#tech-h1 {
+	font-size: 34px;
+	padding-bottom: 1em;
+}
+
+#tech-space {
+	background: #fff;
+	height: 5px;
+	margin: 0 0 1em;
+}
+
+.tech-list {
+	color: #555;
+	padding: 1em 10em!important;
+}
+
+#tech-space2 {
+	background: #fff;
+	height: 5px;
+	margin: 1em 0 1.5em;
+}
+
+#tech-link {
+	text-decoration: none;
+	color: #555;
+	padding: 0 10em;
+}
+
+#tech-link:hover {
+	color: #000;
+	font-weight: bolder;
+}
+
+/*ERROR*/
+#err-link {
+	text-decoration: none;
+	display: block;
+	color: #555;
+	text-align: center;
+}
+
+#err-link:hover {
+	color: #000;
+	font-weight: bolder;
+}
+
+/*RESUME*/
+#res-link {
+	text-decoration: none;
+	color: #555;
+	display: block;
+	text-align: center;
+	padding: 0 10em;
+}
+
+#res-link:hover {
+	color: #000;
+	font-weight: bolder;
+}
+
+/*SITE WIDE*/
+
+.emph {
+	color: #000;
+	text-decoration: underline;
+}
+
+.hover {
+}
+
+.hover:hover {
+	color: #000;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+.hover-t {
+	color: #000;
+	padding: 0 5px;
+}
+
+.hover-t:hover {
+	border-right: 1px solid #000;
+	border-left: 1px solid #000;
+}
+
+.padding-top {
+	padding-top: 2em;
+}
+
+.padding-bottom {
+	padding-bottom: 2em;
+}
+
+/*MEDIA QUERIES - iPad and below*/
+@media (max-width: 770px) {
+
+	body {
+		margin: 0;
+		background: #ddd;
+	}
+
+	h1 {
+		font-size: 1.3em;
+		padding: 0 0 10px;
+		font-weight: bolder;
+	}
+
+	h2 {
+		font-size: 1em;
+		letter-spacing: 1px;
+		padding: 10px 10px 20px;
+		margin: 0;
+	}
+
+	li {
+		padding: 20px 0;
+	}
+
+	li:first-child {
+		padding: 20px 0 10px 0;
+	}
+
+	li:last-child {
+		padding: 10px 0 20px 0;
+	}
+
+	.container {
+		margin: 0 auto;
+	}
+
+	.links {
+		display: block;
+		text-align: center;
+		width: 100%;
+		height: 100%;
+		padding: 20px 0;
+	}
+
+	.list {
+		padding: 10px;
+		font-size: 1em;
+	}
+
+	.list-p {
+		font-size: 9px;
+	}
+
+	#lang-h1 {
+		font-size: 1.5em;
+		padding-bottom: 1em;
+	}
+
+	.lang-list {
+		color: #555;
+		padding: 10px!important;
+	}
+
+	#tech-h1 {
+		font-size: 1.5em;
+		padding-bottom: 1em;
+	}
+
+	.tech-list {
+		color: #555;
+		padding: 10px!important;
+	}
+
+	.hover {
+	}
+
+	.hover:hover {
+		color: #000;
+		border-top: 0;
+		border-bottom: 1px solid #000;
+	}
+
+	.div-bottom {
+		padding-top: 2em;
+	}
+
+	img {
+		width: 100%;
+	}
+}
