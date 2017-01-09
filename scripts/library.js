@@ -1,5 +1,3 @@
-console.log('here');
-
 // GLOBAL - functions
 
 var jpgObject = {
@@ -85,11 +83,13 @@ var clearMove4 = () => {
 var showWork = () => {
 	var mainHome  			  = document.getElementById('main_home');
 	var mainWork   			  = document.getElementById('main_work');
+	var mainLang 			  = document.getElementById('main_lang');
 	var mainJpgs   			  = document.getElementById('main_jpgs');
 	var mainAbout  			  = document.getElementById('main_about');
 			  
 	var mainBgT    			  = document.getElementById('main_bg_top');
 	var mainBgM    			  = document.getElementById('main_bg_middle');
+	var mainBgB 			  = document.querySelector('body');
 	var mainBg3               = document.getElementById('main_bg_middle3');
 	var mainBg4    			  = document.getElementById('main_bg_middle4');
 	var darkBg     			  = document.getElementById('dark');
@@ -97,9 +97,12 @@ var showWork = () => {
 	if (mainWork.classList == 'anim') {
 		mainHome.style.display  = 'block';
 		mainWork.classList      = '';
+		mainBgM.style.backgroundImage = 'url(./img/bg_middle.png)';
+		mainBgB.style.backgroundImage = 'url(./img/bg_bottom.jpg)';
 	} else {
 		mainHome.style.display  = 'none';
 		mainWork.classList      = 'anim';
+		mainLang.classList    	= '';
 		mainJpgs.classList    	= '';
 		mainAbout.classList   	= '';
 		mainBg3.classList     	= '';
@@ -107,7 +110,9 @@ var showWork = () => {
 		darkBg.style.display  	= 'none';
 		mainBgT.style.display 	= 'block';
 		mainBgM.style.display 	= 'block';
-	}
+		mainBgM.style.backgroundImage = 'url(./img/bg_bottom.jpg)';
+		mainBgB.style.backgroundImage = 'url(./img/bg_middle.png)';
+	}		
 };
 
 	// WORK :: Portfolio 1 
@@ -205,11 +210,36 @@ var showWork = () => {
 		portFade[3].classList      = 'port';
 		mainPort1.style.display    = 'none';
 	};
+	
+	// WORK :: Portfolio 5 
+	var showPort5 = () => {
+		var mainPort1              = document.getElementById('main_work_port5');
+		var interstitial           = document.getElementById('interstitial');
+		var portFade               = document.getElementsByClassName('port');
 
-// JPGs - Functions
-var showJpgs = () => {
+		interstitial.style.display = 'block';
+		mainPort1.style.display    = 'block';
+
+		setTimeout(function() {
+			portFade[4].classList += ' portAnim';
+		}, 100);
+	};
+
+	var hidePort5 = () => {
+		var mainPort1              = document.getElementById('main_work_port5');
+		var interstitial           = document.getElementById('interstitial');
+		var portFade               = document.getElementsByClassName('port');
+
+		interstitial.style.display = 'none';
+		portFade[4].classList      = 'port';
+		mainPort1.style.display    = 'none';
+	};
+
+// LANGUAGES - Function
+var showLang = () => {
 	var mainHome   = document.getElementById('main_home');
 	var mainWork   = document.getElementById('main_work');
+	var mainLang   = document.getElementById('main_lang');
 	var mainJpgs   = document.getElementById('main_jpgs');
 	var mainAbout  = document.getElementById('main_about');
 
@@ -217,6 +247,49 @@ var showJpgs = () => {
 	var mainBg4    = document.getElementById('main_bg_middle4');
 	var mainBgT    = document.getElementById('main_bg_top');
 	var mainBgM    = document.getElementById('main_bg_middle');
+	var mainBgB    = document.querySelector('body');
+	var darkBg     = document.getElementById('dark');
+
+	if (mainLang.classList == 'anim') {
+		mainHome.style.display  = 'block';
+		mainWork.classList      = '';
+		mainLang.classList      = '';
+		mainAbout.classList   	= '';
+		mainJpgs.classList    	= '';
+		mainBg3.classList     	= '';
+		mainBg4.classList     	= '';
+		mainBgT.style.display 	= 'block';
+		mainBgM.style.display 	= 'block';
+		darkBg.style.display  	= 'none';
+		mainBgM.style.backgroundImage = 'url(./img/bg_middle.png)';
+		mainBgB.style.backgroundImage = 'url(./img/bg_bottom.jpg)';
+	} else {
+		mainHome.style.display  = 'none';
+		mainWork.classList      = '';
+		mainLang.classList      = 'anim';
+		mainJpgs.classList    	= '';
+		mainAbout.classList   	= '';
+		mainBg3.classList     	= '';
+		mainBg4.classList     	= '';
+		darkBg.style.display  	= 'block';
+		mainBgT.style.display 	= 'none';
+		mainBgM.style.display 	= 'none';
+	}
+};
+
+// JPGs - Functions
+var showJpgs = () => {
+	var mainHome   = document.getElementById('main_home');
+	var mainWork   = document.getElementById('main_work');
+	var mainLang   = document.getElementById('main_lang');
+	var mainJpgs   = document.getElementById('main_jpgs');
+	var mainAbout  = document.getElementById('main_about');
+
+	var mainBg3    = document.getElementById('main_bg_middle3');
+	var mainBg4    = document.getElementById('main_bg_middle4');
+	var mainBgT    = document.getElementById('main_bg_top');
+	var mainBgM    = document.getElementById('main_bg_middle');
+	var mainBgB    = document.querySelector('body');
 	var darkBg     = document.getElementById('dark');
 
 	if (mainJpgs.classList == 'anim') {
@@ -229,11 +302,14 @@ var showJpgs = () => {
 		mainBgT.style.display 	= 'block';
 		mainBgM.style.display 	= 'block';
 		darkBg.style.display  	= 'none';
+		mainBgM.style.backgroundImage = 'url(./img/bg_middle.png)';
+		mainBgB.style.backgroundImage = 'url(./img/bg_bottom.jpg)';
 	} else {
 		mainHome.style.display  = 'none';
 		mainWork.classList      = '';
-		mainAbout.classList   	= '';
+		mainLang.classList      = '';
 		mainJpgs.classList    	= 'anim';
+		mainAbout.classList   	= '';
 		mainBg3.classList     	= 'anim';
 		mainBg4.classList     	= '';
 		darkBg.style.display  	= 'block';
@@ -297,6 +373,7 @@ var showJpgs = () => {
 var showAbout = () => {
 	var mainHome   = document.getElementById('main_home');
 	var mainWork   = document.getElementById('main_work');
+	var mainLang   = document.getElementById('main_lang');
 	var mainJpgs   = document.getElementById('main_jpgs');
 	var mainAbout  = document.getElementById('main_about');
 
@@ -304,6 +381,8 @@ var showAbout = () => {
 	var mainBg4    = document.getElementById('main_bg_middle4');
 	var mainBgT    = document.getElementById('main_bg_top');
 	var mainBgM    = document.getElementById('main_bg_middle');
+	var mainBgB    = document.querySelector('body');
+
 	var darkBg     = document.getElementById('dark');
 
 	if (mainAbout.classList == 'anim') {
@@ -313,9 +392,12 @@ var showAbout = () => {
 		mainBgT.style.display   = 'block';
 		mainBgM.style.display   = 'block';
 		darkBg.style.display    = 'none';
+		mainBgM.style.backgroundImage = 'url(./img/bg_middle.png)';
+		mainBgB.style.backgroundImage = 'url(./img/bg_bottom.jpg)';
 	} else {
 		mainHome.style.display  = 'none';
 		mainWork.classList      = '';
+		mainLang.classList      = '';
 		mainJpgs.classList      = '';
 		mainAbout.classList     = 'anim';
 		mainBg3.classList       = '';
@@ -397,6 +479,7 @@ var showAbout = () => {
 var showHome = () => {
 	var mainHome   = document.getElementById('main_home');
 	var mainWork   = document.getElementById('main_work');
+	var mainLang   = document.getElementById('main_lang');
 	var mainJpgs   = document.getElementById('main_jpgs');
 	var mainAbout  = document.getElementById('main_about');
 
@@ -404,10 +487,12 @@ var showHome = () => {
 	var mainBg4    = document.getElementById('main_bg_middle4');
 	var mainBgT    = document.getElementById('main_bg_top');
 	var mainBgM    = document.getElementById('main_bg_middle');
+	var mainBgB    = document.querySelector('body');
 	var darkBg     = document.getElementById('dark');
 
 	mainHome.style.display  = 'block';
 	mainWork.classList    	= '';
+	mainLang.classList      = '';
 	mainJpgs.classList    	= '';
 	mainAbout.classList   	= '';
 	mainBg3.classList     	= '';
@@ -415,4 +500,6 @@ var showHome = () => {
 	mainBgT.style.display 	= 'block';
 	mainBgM.style.display 	= 'block';
 	darkBg.style.display  	= 'none';
+	mainBgM.style.backgroundImage = 'url(./img/bg_middle.png)';
+	mainBgB.style.backgroundImage = 'url(./img/bg_bottom.jpg)';
 };

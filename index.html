@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata|Source+Code+Pro|Ubuntu+Mono" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
 	<title>.jpg</title>
 </head>
@@ -13,7 +14,7 @@
 		<nav id="header_nav">
 			<ul id="header_ul">
 				<li onclick="showWork(); clearMove()">Work</li>
-				<li>Languages &amp; Technology</li>
+				<li onclick="showLang(); clearMove()">Languages &amp; Technology</li>
 				<li onclick="showJpgs(); clearMove()">.jpgs</li>
 				<li onclick="showAbout(); clearMove()">About</li>
 			</ul>
@@ -21,7 +22,7 @@
 	</header>
 
 	<main>
-
+	<!-- Backgrounds -->
 		<div id="dark"></div>
 		<div id="main_bg_middle"></div>
 		<div id="main_bg_middle3"></div>
@@ -33,7 +34,7 @@
 			<p>Front End Web Engineering</p>
 			<p>UI/UX Design</p>
 			<p>Creative Photography</p>
-			<p>Musical Crafstmanship</p>
+			<p>Musical Craftsmanship</p>
 		</div>
 
 		<!-- Work -->
@@ -43,7 +44,7 @@
 				<li onclick="showPort2()">portfolio 2 : Magic Deck Builder</li>
 				<li onclick="showPort3()">portfolio 3 : Gluebox</li>
 				<li onclick="showPort4()">portfolio 4 : Tic Tac Toe</li>
-				<li>portfolio 5 : Various Programmatic Creatives</li>
+				<li onclick="showPort5()">portfolio 5 : Various Programmatic Creatives</li>
 			</ul>
 		</div>
 			<!-- Work :: Portfolios -->
@@ -51,56 +52,123 @@
 				<div id="port1_imac">
 					<img src="img/imac.png" class="imac"/>
 					<div id="port1_i">
-						<img src="img/port1.png" class="port"/>
+						<img src="img/port1.jpg" class="port"/>
 					</div>
 				</div>
-				<p><em>MEAN, jQuery, JavaScript, UI/UX Design, Adobe CS</em></p>
-				<p>A wedding photography company's portfolio page.  A single page app, site admins have a tool that allows them to select registered clients and upload
-				photos directly into a private responsive album.  This feature will expedite the work flow for the photographer by giving clients instant access to their 
-				proof album effectively enhancing user experience.</p>
-				<p> Test client side functionality with <span>demo@gmail.com</span> | pw: <span>fargo</span></p>
-				<a class="port_a" href="http://sans35.herokuapp.com" target="_blank">sans35.herokuapp.com</a>
-				<p onclick="hidePort1()"" class="return">Return</p>
+				<div class="portDiv">
+					<div class="portDivbg">
+						<p><em>MEAN, jQuery, JavaScript, UI/UX Design, Adobe CS</em></p>
+						<p>A wedding photography company's portfolio page.  A single page app, site admins have a tool that allows them to select registered clients and upload
+						photos directly into a private responsive album.  This feature will expedite the work flow for the photographer by giving clients instant access to their 
+						proof album effectively enhancing user experience.</p>
+						<p>Test client side functionality with <br><span>user: demo@gmail.com</span> | pw: <span>fargo</span></p>
+					</div>
+					<a class="port_a" href="http://sans35.herokuapp.com" target="_blank">sans35.herokuapp.com</a>
+					<p onclick="hidePort1()"" class="return">Return</p>
+				</div>
 			</div>
 			<div id="main_work_port2">
 				<div id="port2_imac">
 					<img src="img/imac.png" class="imac"/>
 					<div id="port2_i">
-						<img src="img/port2.png" class="port"/>
+						<img src="img/port2.jpg" class="port"/>
 					</div>
 				</div>
-				<p><em>MEAN, jQuery, JavaScript, UI/UX Design, Adobe CS</em></p>
-				<p>Single page app that allows you to register an account, query a Magic: The Gathering&trade; API in search of virtually any card, and save your 
-				favorite cards to your deck.</p>
-				<a class="port_a" href="http://magic-deckbuilder.herokuapp.com" target="_blank">magic-deckbuilder.herokuapp.com</a>			
-				<p onclick="hidePort2()"" class="return">Return</p>
+				<div class="portDiv">
+					<div class="portDivbg">
+						<p><em>MEAN, jQuery, JavaScript, UI/UX Design, Adobe CS</em></p>
+						<p>Single page app that allows you to register an account, query a Magic: The Gathering&trade; API in search of virtually any card, and save your 
+						favorite cards to your deck.</p>
+					</div>
+					<a class="port_a" href="http://magic-deckbuilder.herokuapp.com" target="_blank">magic-deckbuilder.herokuapp.com</a>			
+					<p onclick="hidePort2()"" class="return">Return</p>
+				</div>
 			</div>
 			<div id="main_work_port3">
 				<div id="port3_imac">
 					<img src="img/imac.png" class="imac"/>
 					<div id="port3_i">
-						<img src="img/port3.png" class="port"/>
+						<img src="img/port3.jpg" class="port"/>
 					</div>
 				</div>
-				<p><em>Ruby, Rails, SQL, UI/UX Design</em></p>
-				<p>A minimalist Ruby on Rails app that allows for anonymous plaintext dumps that are wiped from the server as they age beyond 10 minutes.  Gluebox 
-				is the result of Pastebin's fusing with the Buddhist notion of impermanence.</p>
-				<a class="port_a" href="http://glue-box.herokuapp.com" target="_blank">glue-box.herokuapp.com</a>
-				<p onclick="hidePort3()"" class="return">Return</p>
+				<div class="portDiv">
+					<div class="portDivbg">
+						<p><em>Ruby, Rails, SQL, UI/UX Design</em></p>
+						<p>A minimalist Ruby on Rails app that allows for anonymous plaintext dumps that are wiped from the server as they age beyond 10 minutes.  Gluebox 
+						is the result of Pastebin's fusing with the Buddhist notion of impermanence.</p>
+					</div>
+					<a class="port_a" href="http://glue-box.herokuapp.com" target="_blank">glue-box.herokuapp.com</a>
+					<p onclick="hidePort3()"" class="return">Return</p>
+				</div>
 			</div>
 			<div id="main_work_port4">
 				<div id="port4_imac">
 					<img src="img/imac.png" class="imac"/>
 					<div id="port4_i">
-						<img src="img/port4.png" class="port"/>
+						<img src="img/port4.jpg" class="port"/>
 					</div>
 				</div>
-				<p><em>JavaScript, jQuery, HTML/CSS</em></p>
-				<p>A responsive Human vs. Computer Tic Tac Toe game written in JavaScript with native CSS styling.</p>
-				<a class="port_a" href="http://cartographer-thursday-24827.bitballoon.com" target="_blank">cartographer-thursday-24827.bitballoon.com</a>
-				<p onclick="hidePort4()"" class="return">Return</p>
+				<div class="portDiv">
+					<div class="portDivbg">
+						<p><em>JavaScript, jQuery, HTML/CSS</em></p>
+						<p>A responsive Human vs. Computer Tic Tac Toe game written in JavaScript with native CSS styling.</p>
+					</div>
+					<a class="port_a" href="http://cartographer-thursday-24827.bitballoon.com" target="_blank">cartographer-thursday-24827.bitballoon.com</a>
+					<p onclick="hidePort4()"" class="return">Return</p>
+				</div>
 			</div>
-
+			<div id="main_work_port5">
+				<div id="port5_imac">
+					<img src="img/imac.png" class="imac"/>
+					<div id="port5_i">
+						<img src="img/port5.jpg" class="port"/>
+					</div>
+				</div>
+				<div class="portDiv">
+					<div class="portDivbg">
+						<p><em>JavaScript, HTML/CSS, DCO Advertising</em></p>
+						<p>A collection of programmatic campaign work I've developed for many internationally recognized brands.</p>
+					</div>
+					<a class="port_a" href="https://en.wikipedia.org/wiki/Dynamic_Creative_Optimization" target="_blank">TBA</a>
+					<p onclick="hidePort5()"" class="return">Return</p>
+				</div>
+			</div>
+		<!-- Languages and Tech -->
+		<div id="main_lang">
+			<div id="lang_langTech">
+				<p class="lang_pLeft orange">Languages</p>
+				<p class="lang_pRight orange">Technology</p>
+				<p class="lang_pLeft">HTML5</p>
+				<p class="lang_pRight">Photoshop</p>
+				<p class="lang_pLeft">CSS3</p>
+				<p class="lang_pRight">Premiere</p>
+				<p class="lang_pLeft">Javascript/ECMA6</p>
+				<p class="lang_pRight">Final Cut Pro</p>
+				<p class="lang_pLeft">jQuery</p>
+				<p class="lang_pRight">Jivox</p>
+				<p class="lang_pLeft">AngularJS</p>
+				<p class="lang_pRight">DCM</p>
+				<p class="lang_pLeft">Express.js</p>
+				<p class="lang_pRight">Celtra</p>
+				<p class="lang_pLeft">PHP</p>
+				<p class="lang_pRight">GWD</p>
+				<p class="lang_pLeft">Ruby</p>
+				<p class="lang_pRight">DCM</p>
+				<p class="lang_pLeft">Rails</p>
+				<p class="lang_pRight">Excel</p>
+				<p class="lang_pLeft">Python</p>
+				<p class="lang_pRight">Quickbooks</p>
+				<p class="lang_pLeft">Node.js</p>
+				<p class="lang_pRight">Logic</p>
+				<p class="lang_pLeft">SQL</p>
+			</div>
+			<div id="lang_img">
+				<div id="scrollImg1"></div>
+				<div id="scrollImg2"></div>
+				<div id="scrollImg3"></div>
+				<div id="scrollImg4"></div>
+			</div>
+		</div>
 		<!-- JPGs -->
 		<div id="main_jpgs">
 			<div id="jpgs_photo"></div>
@@ -130,24 +198,24 @@
 			</div>
 			<div id="about_japanese" lang="ja">
 				<ul>
-					<li>* フラントエンッドウェブエンジニア</li>
-					<li>* 写真者</li>
-					<li>* 音楽　@ Mouse Deer</li>
-					<li>* ELO 1600 チェス者</li>
+					<li>* フラントエンッドエンジニア</li>
+					<li>* 旅行と結婚式の写真者</li>
+					<li>* 音楽　@ MOUSE DEER</li>
+					<li>* ELO　１６００　チェスプレーヤー</li>
 					<li>* 日本語を喋ります、韓国語も</li>
-					<li>* 世界を見っている</li>
-					<li>* 言論の自由代言人</li>
+					<li>* 世界旅行</li>
+					<li>* 言論自由の擁護者</li>
 				</ul>
 			</div>
 			<div id="about_korean" lang="ko">
 				<ul>
-					<li>* 프랑 트 엔 헤드 웹 엔지니어</li>
-					<li>* 사진들</li>
+					<li>* 웹 엔지니어</li>
+					<li>* 여행가 결혼 사진작가</li>
 					<li>* 음악 @ Mouse Deer</li>
-					<li>* ELO 1600 체스들</li>
-					<li>* 일본어를 수다 있습니다, 한국어도</li>
-					<li>* 세계를 믹스하는</li>
-					<li>* 언론의 자유 대언 인</li>
+					<li>* ELO 1600 체스</li>
+					<li>* 일본어 전문가, 초보 한국어</li>
+					<li>* 세계 여행 자</li>
+					<li>* 언론 자유의 수호자</li>
 				</ul>
 			</div>
 			<div id="about_links">
@@ -163,10 +231,11 @@
 
 	<div id="interstitial"></div>
 
-	<footer>Design :: <span>Alice Sung Eun Kim</span> | Development :: <span>James P. Goatcher</span> | &copy; 2017</footer>
+	<footer>Design :: <a href="http://www.alicesung.com" target="_blank">Alice Sung Eun Kim</a> | Development :: <a href="http://www.jamesgoatcher.com" target="_blank">James P. Goatcher</a> | &copy; 2017</footer>
 
 	<script type="text/javascript" src="scripts/detect.js"></script>
 	<script type="text/javascript" src="scripts/library.js"></script>
+	<script type="text/javascript" src="scripts/scroller.js"></script>
 
 </body>
 
