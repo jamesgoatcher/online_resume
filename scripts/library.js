@@ -409,9 +409,10 @@ var showAbout = () => {
 };
 	
 	var eng  = document.getElementById('eng');
-	eng.style.backgroundColor = '#808080';
+	eng.style.animation = 'colorTwirl 2s linear infinite';
 
 	var showEnglish = () => {
+		var name = document.getElementById('about_name');
 		var engl = document.getElementById('about_english');
 		var japn = document.getElementById('about_japanese');
 		var kore = document.getElementById('about_korean');
@@ -423,16 +424,21 @@ var showAbout = () => {
 			japn.style.display = 'none';
 			kore.style.display = 'none';
 		} else {
-			engl.style.display        = 'block';
-			eng.style.backgroundColor = '#808080';
-			japn.style.display        = 'none';
-			jap.style.backgroundColor = '';
-			kore.style.display        = 'none';
-			kor.style.backgroundColor = '';
+			name.innerHTML         = 'james p. goatcher';
+			name.style.fontSize    = '52px';
+			engl.style.display     = 'block';
+			eng.style.animation    = 'colorTwirl 2s linear infinite';
+			japn.style.display     = 'none';
+			jap.style.animation    = '';
+			jap.style.borderBottom = '3px solid #b1803a';
+			kore.style.display     = 'none';
+			kor.style.animation    = '';
+			kor.style.borderBottom = '3px solid #b1803a';
 		}
 	};
 
 	var showJapanese = () => {
+		var name = document.getElementById('about_name');
 		var engl = document.getElementById('about_english');
 		var japn = document.getElementById('about_japanese');
 		var kore = document.getElementById('about_korean');
@@ -445,16 +451,21 @@ var showAbout = () => {
 			engl.style.display = 'none';
 			kore.style.display = 'none';
 		} else {
-			engl.style.display        = 'none';
-			eng.style.backgroundColor = '';
-			japn.style.display        = 'block';
-			jap.style.backgroundColor = '#808080';
-			kore.style.display        = 'none';
-			kor.style.backgroundColor = '';
+			name.innerHTML      = 'ジェームス　ゴーチャー';
+			name.style.fontSize = '40px';
+			engl.style.display  = 'none';
+			eng.style.animation = '';
+			eng.style.borderBottom = '3px solid #b1803a';
+			japn.style.display  = 'block';
+			jap.style.animation = 'colorTwirl 2s linear infinite';
+			kore.style.display  = 'none';
+			kor.style.animation = '';
+			kor.style.borderBottom = '3px solid #b1803a';
 		}
 	};
 
 	var showKorean = () => {
+		var name = document.getElementById('about_name');
 		var engl = document.getElementById('about_english');
 		var japn = document.getElementById('about_japanese');
 		var kore = document.getElementById('about_korean');
@@ -466,12 +477,16 @@ var showAbout = () => {
 			japn.style.display = 'none';
 			engl.style.display = 'none';
 		} else {
-			engl.style.display        = 'none';
-			eng.style.backgroundColor = '';
-			japn.style.display        = 'none';
-			jap.style.backgroundColor = '';
-			kore.style.display        = 'block';
-			kor.style.backgroundColor = '#808080';
+			name.innerHTML         = '제임스 고철';
+			name.style.fontSize    = '48px';
+			engl.style.display     = 'none';
+			eng.style.animation    = '';
+			eng.style.borderBottom = '3px solid #b1803a';
+			japn.style.display     = 'none';
+			jap.style.animation    = '';
+			jap.style.borderBottom = '3px solid #b1803a';
+			kore.style.display     = 'block';
+			kor.style.animation    = 'colorTwirl 2s linear infinite';
 		}
 	};
 
@@ -503,3 +518,7 @@ var showHome = () => {
 	mainBgM.style.backgroundImage = 'url(./img/bg_middle.png)';
 	mainBgB.style.backgroundImage = 'url(./img/bg_bottom.jpg)';
 };
+
+// window.onload = function() {
+// 	alert('hello');
+// };

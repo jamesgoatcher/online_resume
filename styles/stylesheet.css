@@ -81,8 +81,6 @@ header {
 		transition: all .5s;
 	} #header_logo:hover {
 		color: #000000;
-		-webkit-transform: scale(1.25);
-		transform: scale(1.25);
 	}
 
 	#header_nav {
@@ -111,10 +109,10 @@ header {
 		text-transform: lowercase;
 		-webkit-transition: all .5s;
 		transition: all .5s;
-	} #header_ul > li:hover {
-		color: #000000;
-		-webkit-transform: rotateX(360deg);
-		transform: rotateX(360deg);
+	} #header_ul > li:nth-child(odd):hover {
+		transform: skew(26deg);
+	} #header_ul > li:nth-child(even):hover {
+		transform: skew(-26deg);
 	}
 
 /* Main */
@@ -210,6 +208,7 @@ main {
 	#main_home {
 		color: #fff;
 		font-size: 42px;
+		cursor: vertical-text;
 		top: 50%;
 		left: 50%;
 		-webkit-transform: translate3d(-50%,-50%,0);
@@ -577,14 +576,14 @@ main {
 
 	/* About */
 	#main_about {
-		width: 700px;
-		height: 400px;
+		width: 490px;
+		height: 300px;
 		display: none;
 		opacity: 0;
 		top: 450px;
-		left: 250px;
-/*		-webkit-transform: translate3d(-50%,-50%,0);
-		transform: translate3d(-50%,-50%,0);*/
+		left: 50%;
+		-webkit-transform: translate3d(-50%,0,0);
+		transform: translate3d(-50%,0,0);
 		font-size: 16px;
 		color: #ffffff;
 		position: absolute;
@@ -596,21 +595,39 @@ main {
 		opacity: 1;
 	}
 
+	#about_name {
+		font-size: 52px;
+		position: relative;
+		top: 20px;
+		left: 0;
+		display: inline-block;
+	}
+
 	#about_languages {
 		font-size: 16px;
+		position: absolute;
+		z-index: 50;
+		top: -250px;
 	} 
 
 	#about_languages > div {
 		cursor: pointer;
 		display: inline-block;
-		padding: 10px 30px;
+		padding: 10px 50px;
 		margin-right: 2px;
-		border-bottom: 1px solid #000;
+		border-bottom: 3px solid #b1803a;
 		line-height: 16px;
-		-webkit-transition: background-color .5s;
-		transition: background-color .5s;
-	} #about_languages > div:hover {
-		background-color: #b1803a;
+		-webkit-transition: border-bottom 1s;
+		transition: border-bottom 1s;
+	} @keyframes colorTwirl {
+		0%   { filter: hue-rotate(0deg); }
+
+		100% { filter: hue-rotate(360deg); }
+	}
+
+	#about_lang_div {
+		position: absolute;
+		top: 80px;
 	}
 
 	#about_japanese, #about_korean {
@@ -618,42 +635,44 @@ main {
 	}
 
 	#about_links {
-		width: 550px;
-		height: 400px;
+		width: 500px;
+		height: 30px;
 		cursor: pointer;
-		top: 257px;
+		top: 250px;
 		left: 0;
 		font-size: 16px;
 		position: absolute;
 	} #about_links > a {
-		padding-right: 50px;
-		text-decoration: none;
+		padding-right: 52px;
 		color: #ffffff;
-		-webkit-transition: -webkit-filter 2s;
-		transition: filter 2s;
+		-webkit-transition: -webkit-filter 1s;
+		transition: filter 1s;
 	} #about_links > a:hover {
 		color: #b1803a;
-		-webkit-filter: hue-rotate(720deg);
+		-webkit-filter: -webkit-hue-rotate(720deg);
 		filter: hue-rotate(720deg);
 	}
 
 	#profileDiv {
-		top: -320px;
-		left: 600px;
+		top: -310px;
+		left: 224px;
 		width: 300px;
-		z-index: 30;
-		background-color: #000000;
+		z-index: -30;
+		background-color: rgba(0,55,230,.5);
 		box-sizing: border-box;
-		border-radius: 300px 300px 0 0;
-		width: 300px;
-		height: 300px;
+		border-radius: 0 150px 150px 0 ;
+		width: 250px;
+		height: 250px;
 	}
 
 	#profileImg {
-		top: -180px;
-		left: 600px;
-		width: 300px;
-		z-index: 30;
+		top: -275px;
+		left: 120px;
+		width: 230px;
+		z-index: -30;
+		-webkit-filter: grayscale(1);
+		filter: grayscale(1);
+		opacity: .5;
 	}
 
 /* Footer */
