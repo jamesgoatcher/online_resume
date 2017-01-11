@@ -29,9 +29,9 @@ var moveTopBG = (e) => {
 	var topBG      = document.getElementById('main_bg_top');
 	var middleBG   = document.getElementById('main_bg_middle');
 
-	var xSaved  = (x/40) + 50;
+	var xSaved  = (x/40) + 35;
 
-	var ySaved  = (y/40) + 50;
+	var ySaved  = (y/40) + 30;
 
 	topBG.style.transform    = 'translate3d(-' + xSaved + '%, -' + ySaved + '%, 0)';
 	middleBG.style.transform = 'translate3d(-' + ySaved + '%, -' + xSaved + '%, 0)';
@@ -92,13 +92,13 @@ var showWork = () => {
 	var mainBgB 			  = document.querySelector('body');
 	var mainBg3               = document.getElementById('main_bg_middle3');
 	var mainBg4    			  = document.getElementById('main_bg_middle4');
-	var darkBg     			  = document.getElementById('dark');
 
 	if (mainWork.classList == 'anim') {
 		mainHome.style.display  = 'block';
 		mainWork.classList      = '';
 		mainBgM.style.backgroundImage = 'url(./img/bg_middle.png)';
 		mainBgB.style.backgroundImage = 'url(./img/bg_bottom.jpg)';
+		mainBgB.classList     	= '';
 	} else {
 		mainHome.style.display  = 'none';
 		mainWork.classList      = 'anim';
@@ -107,7 +107,6 @@ var showWork = () => {
 		mainAbout.classList   	= '';
 		mainBg3.classList     	= '';
 		mainBg4.classList     	= '';
-		darkBg.style.display  	= 'none';
 		mainBgT.style.display 	= 'block';
 		mainBgM.style.display 	= 'block';
 		mainBgM.style.backgroundImage = 'url(./img/bg_bottom.jpg)';
@@ -248,7 +247,6 @@ var showLang = () => {
 	var mainBgT    = document.getElementById('main_bg_top');
 	var mainBgM    = document.getElementById('main_bg_middle');
 	var mainBgB    = document.querySelector('body');
-	var darkBg     = document.getElementById('dark');
 
 	if (mainLang.classList == 'anim') {
 		mainHome.style.display  = 'block';
@@ -260,9 +258,9 @@ var showLang = () => {
 		mainBg4.classList     	= '';
 		mainBgT.style.display 	= 'block';
 		mainBgM.style.display 	= 'block';
-		darkBg.style.display  	= 'none';
 		mainBgM.style.backgroundImage = 'url(./img/bg_middle.png)';
 		mainBgB.style.backgroundImage = 'url(./img/bg_bottom.jpg)';
+		mainBgB.classList     	= '';
 	} else {
 		mainHome.style.display  = 'none';
 		mainWork.classList      = '';
@@ -271,9 +269,9 @@ var showLang = () => {
 		mainAbout.classList   	= '';
 		mainBg3.classList     	= '';
 		mainBg4.classList     	= '';
-		darkBg.style.display  	= 'block';
 		mainBgT.style.display 	= 'none';
 		mainBgM.style.display 	= 'none';
+		mainBgB.classList     	= 'bodyDark';
 	}
 };
 
@@ -290,7 +288,6 @@ var showJpgs = () => {
 	var mainBgT    = document.getElementById('main_bg_top');
 	var mainBgM    = document.getElementById('main_bg_middle');
 	var mainBgB    = document.querySelector('body');
-	var darkBg     = document.getElementById('dark');
 
 	if (mainJpgs.classList == 'anim') {
 		mainHome.style.display  = 'block';
@@ -301,18 +298,18 @@ var showJpgs = () => {
 		mainBg4.classList     	= '';
 		mainBgT.style.display 	= 'block';
 		mainBgM.style.display 	= 'block';
-		darkBg.style.display  	= 'none';
 		mainBgM.style.backgroundImage = 'url(./img/bg_middle.png)';
 		mainBgB.style.backgroundImage = 'url(./img/bg_bottom.jpg)';
+		mainBgB.classList     	= '';
 	} else {
 		mainHome.style.display  = 'none';
 		mainWork.classList      = '';
 		mainLang.classList      = '';
 		mainJpgs.classList    	= 'anim';
 		mainAbout.classList   	= '';
+		mainBgB.classList     	= 'bodyDark';
 		mainBg3.classList     	= 'anim';
 		mainBg4.classList     	= '';
-		darkBg.style.display  	= 'block';
 		mainBgT.style.display 	= 'none';
 		mainBgM.style.display 	= 'none';
 	}
@@ -383,17 +380,15 @@ var showAbout = () => {
 	var mainBgM    = document.getElementById('main_bg_middle');
 	var mainBgB    = document.querySelector('body');
 
-	var darkBg     = document.getElementById('dark');
-
 	if (mainAbout.classList == 'anim') {
 		mainHome.style.display  = 'block';
 		mainAbout.classList     = '';
 		mainBg4.classList       = '';
 		mainBgT.style.display   = 'block';
 		mainBgM.style.display   = 'block';
-		darkBg.style.display    = 'none';
 		mainBgM.style.backgroundImage = 'url(./img/bg_middle.png)';
 		mainBgB.style.backgroundImage = 'url(./img/bg_bottom.jpg)';
+		mainBgB.classList     	= '';
 	} else {
 		mainHome.style.display  = 'none';
 		mainWork.classList      = '';
@@ -402,9 +397,9 @@ var showAbout = () => {
 		mainAbout.classList     = 'anim';
 		mainBg3.classList       = '';
 		mainBg4.classList       = 'anim';
-		darkBg.style.display    = 'block';
 		mainBgT.style.display   = 'none';
 		mainBgM.style.display   = 'none';
+		mainBgB.classList     	= 'bodyDark';
 	}
 };
 	
@@ -503,7 +498,6 @@ var showHome = () => {
 	var mainBgT    = document.getElementById('main_bg_top');
 	var mainBgM    = document.getElementById('main_bg_middle');
 	var mainBgB    = document.querySelector('body');
-	var darkBg     = document.getElementById('dark');
 
 	mainHome.style.display  = 'block';
 	mainWork.classList    	= '';
@@ -514,11 +508,7 @@ var showHome = () => {
 	mainBg4.classList     	= '';
 	mainBgT.style.display 	= 'block';
 	mainBgM.style.display 	= 'block';
-	darkBg.style.display  	= 'none';
 	mainBgM.style.backgroundImage = 'url(./img/bg_middle.png)';
 	mainBgB.style.backgroundImage = 'url(./img/bg_bottom.jpg)';
+	mainBgB.classList     	= '';
 };
-
-// window.onload = function() {
-// 	alert('hello');
-// };

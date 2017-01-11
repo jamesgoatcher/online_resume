@@ -25,8 +25,8 @@ var scrollImg1    = document.getElementById('scrollImg1');
 var scrollImg2    = document.getElementById('scrollImg2');
 var scrollImg3    = document.getElementById('scrollImg3');
 var scrollImg4    = document.getElementById('scrollImg4');
-var scrollDiv    = document.getElementById('lang_langTech');
-var nextImgIndex = 0;
+var scrollDiv     = document.getElementById('lang_langTech');
+var nextImgIndex  = 0;
 
 //Scroll function
 var changeImg = (e) => {
