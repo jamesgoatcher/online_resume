@@ -117,11 +117,11 @@ var showWork = () => {
 	// WORK :: Portfolio 1 
 	var showPort1 = () => {
 		var mainPort1    		   = document.getElementById('main_work_port1');
-		var interstitial 		   = document.getElementById('interstitial');
 		var portFade     		   = document.getElementsByClassName('port');
+		var mainBgB    			   = document.querySelector('body');
 
-		interstitial.style.display = 'block';
 		mainPort1.style.display    = 'block';
+		mainBgB.classList     	   = 'bodyDark';
 		
 		setTimeout(function() {
 			portFade[0].classList += ' portAnim';
@@ -130,22 +130,22 @@ var showWork = () => {
 
 	var hidePort1 = () => {
 		var mainPort1              = document.getElementById('main_work_port1');
-		var interstitial           = document.getElementById('interstitial');
 		var portFade               = document.getElementsByClassName('port');
+		var mainBgB    			   = document.querySelector('body');
 
-		interstitial.style.display = 'none';
 		portFade[0].classList      = 'port';
 		mainPort1.style.display    = 'none';
+		mainBgB.classList     	   = '';
 	};
 
 	// WORK :: Portfolio 2 
 	var showPort2 = () => {
 		var mainPort1              = document.getElementById('main_work_port2');
-		var interstitial           = document.getElementById('interstitial');
 		var portFade               = document.getElementsByClassName('port');
+		var mainBgB    			   = document.querySelector('body');
 
-		interstitial.style.display = 'block';
 		mainPort1.style.display    = 'block';
+		mainBgB.classList     	   = 'bodyDark';
 
 		setTimeout(function() {
 			portFade[1].classList += ' portAnim';
@@ -154,22 +154,22 @@ var showWork = () => {
 
 	var hidePort2 = () => {
 		var mainPort1              = document.getElementById('main_work_port2');
-		var interstitial           = document.getElementById('interstitial');
 		var portFade               = document.getElementsByClassName('port');
+		var mainBgB    			   = document.querySelector('body');
 
-		interstitial.style.display = 'none';
 		portFade[1].classList      = 'port';
 		mainPort1.style.display    = 'none';
+		mainBgB.classList     	   = '';
 	};
 
 	// WORK :: Portfolio 3 
 	var showPort3 = () => {
 		var mainPort1              = document.getElementById('main_work_port3');
-		var interstitial           = document.getElementById('interstitial');
 		var portFade               = document.getElementsByClassName('port');
+		var mainBgB    			   = document.querySelector('body');
 
-		interstitial.style.display = 'block';
 		mainPort1.style.display    = 'block';
+		mainBgB.classList     	   = 'bodyDark';
 
 		setTimeout(function() {
 			portFade[2].classList += ' portAnim';
@@ -178,22 +178,22 @@ var showWork = () => {
 
 	var hidePort3 = () => {
 		var mainPort1              = document.getElementById('main_work_port3');
-		var interstitial           = document.getElementById('interstitial');
 		var portFade               = document.getElementsByClassName('port');
+		var mainBgB    			   = document.querySelector('body');
 
-		interstitial.style.display = 'none';
 		portFade[2].classList      = 'port';
 		mainPort1.style.display    = 'none';
+		mainBgB.classList     	   = '';
 	};
 
 	// WORK :: Portfolio 4 
 	var showPort4 = () => {
 		var mainPort1              = document.getElementById('main_work_port4');
-		var interstitial           = document.getElementById('interstitial');
 		var portFade               = document.getElementsByClassName('port');
+		var mainBgB    			   = document.querySelector('body');
 
-		interstitial.style.display = 'block';
 		mainPort1.style.display    = 'block';
+		mainBgB.classList     	   = 'bodyDark';
 
 		setTimeout(function() {
 			portFade[3].classList += ' portAnim';
@@ -202,22 +202,22 @@ var showWork = () => {
 
 	var hidePort4 = () => {
 		var mainPort1              = document.getElementById('main_work_port4');
-		var interstitial           = document.getElementById('interstitial');
 		var portFade               = document.getElementsByClassName('port');
+		var mainBgB    			   = document.querySelector('body');
 
-		interstitial.style.display = 'none';
 		portFade[3].classList      = 'port';
 		mainPort1.style.display    = 'none';
+		mainBgB.classList     	   = '';
 	};
 	
 	// WORK :: Portfolio 5 
 	var showPort5 = () => {
 		var mainPort1              = document.getElementById('main_work_port5');
-		var interstitial           = document.getElementById('interstitial');
 		var portFade               = document.getElementsByClassName('port');
+		var mainBgB    			   = document.querySelector('body');
 
-		interstitial.style.display = 'block';
 		mainPort1.style.display    = 'block';
+		mainBgB.classList     	   = 'bodyDark';
 
 		setTimeout(function() {
 			portFade[4].classList += ' portAnim';
@@ -226,12 +226,12 @@ var showWork = () => {
 
 	var hidePort5 = () => {
 		var mainPort1              = document.getElementById('main_work_port5');
-		var interstitial           = document.getElementById('interstitial');
 		var portFade               = document.getElementsByClassName('port');
+		var mainBgB    			   = document.querySelector('body');
 
-		interstitial.style.display = 'none';
 		portFade[4].classList      = 'port';
 		mainPort1.style.display    = 'none';
+		mainBgB.classList     	   = '';
 	};
 
 // LANGUAGES - Function
@@ -473,7 +473,7 @@ var showAbout = () => {
 			engl.style.display = 'none';
 		} else {
 			name.innerHTML         = '제임스 고철';
-			name.style.fontSize    = '48px';
+			name.style.fontSize    = '46px';
 			engl.style.display     = 'none';
 			eng.style.animation    = '';
 			eng.style.borderBottom = '3px solid #b1803a';

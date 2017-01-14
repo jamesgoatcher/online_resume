@@ -295,17 +295,6 @@ main {
 		color: #000000;
 	}
 
-	#interstitial {
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0,0,0, .75);
-		display: none;
-		z-index: 300;
-		position: absolute;
-	}
-
 	.imac {
 		width: 440px;
 	}
@@ -388,6 +377,7 @@ main {
 
 		.portDivbg {
 			background-color: rgba(255,255,255,.5);
+			cursor: vertical-text;
 		}
 
 		#port1_i, #port2_i, #port3_i, #port4_i, #port5_i {
@@ -409,6 +399,7 @@ main {
 		#port1_i::-webkit-scrollbar, #port2_i::-webkit-scrollbar, #port3_i::-webkit-scrollbar, #port4_i::-webkit-scrollbar, #port5_i::-webkit-scrollbar {
 			display: none;
 		}
+
 
 		#main_work_port1 > p, #main_work_port2 > p, #main_work_port3 > p, #main_work_port4 > p, #main_work_port5 > p {
 			cursor: pointer;
@@ -443,6 +434,7 @@ main {
 	#lang_langTech {
 		overflow: scroll;
 		position: absolute;
+		cursor: vertical-text;
 		width: 100%;
 		height: 100%;
 		z-index: 20;
@@ -631,6 +623,14 @@ main {
 	} #main_about.anim {
 		display: block;
 		opacity: 1;
+	}
+
+	#about_name, #about_lang_div > #about_english > ul {
+		cursor: vertical-text;
+	}
+
+	#about_lang_div > #about_japanese > ul, #about_lang_div > #about_korean > ul {
+		cursor: vertical-text;
 	}
 
 	#about_name {
