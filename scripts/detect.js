@@ -14,8 +14,10 @@ var isMobile = false;
 
 console.log('Viewport detected: Mobile is ' + isMobile);
 
-//IE Detection
-	if (navigator.userAgent.indexOf('MSIE')!== -1 || navigator.appVersion.indexOf('Trident/') > 0) {
+//IE Detection :: Executes on conditional comment
+	if (ie_lte9 == false) {
+		console.log('Compatabile browser detected');
+	} else {
 		var iePage = document.createElement('div');
 
 		iePage.classList = 'iePage';
@@ -26,5 +28,3 @@ console.log('Viewport detected: Mobile is ' + isMobile);
 		document.body.appendChild(iePage);
 		console.log('MS IE browser detected');
 	}
-
-console.log('Compatabile browser detected');

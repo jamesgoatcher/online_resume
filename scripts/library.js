@@ -23,7 +23,7 @@ var jpgObject = {
 };
 
 //Main and Work move
-var moveTopBG = (e) => {
+var moveTopBG = function(e) {
 	var x          = parseInt(e.clientX);
 	var y          = parseInt(e.clientY);
 	var topBG      = document.getElementById('main_bg_top');
@@ -34,7 +34,7 @@ var moveTopBG = (e) => {
 	var ySaved  = (y/40) + 30;
 
 	topBG.style.transform    = 'translate3d(-' + xSaved + '%, -' + ySaved + '%, 0)';
-	middleBG.style.transform = 'translate3d(-' + ySaved + '%, -' + xSaved + '%, 0)';
+	middleBG.style.transform = 'translate3d(-' + xSaved + '%, -' + ySaved + '%, 0)';
 
 	topBG.style.filter       = 'hue-rotate(1440deg)'; 
 
@@ -47,7 +47,7 @@ var moveTopBG = (e) => {
 
 };
 
-var clearMove = () => {
+var clearMove = function() {
 	var topBG      = document.getElementById('main_bg_top');
 	var middleBG   = document.getElementById('main_bg_middle');
 
@@ -58,7 +58,7 @@ var clearMove = () => {
 };
 
 //About move
-var moveTopBG4 = (e) => {
+var moveTopBG4 = function(e) {
 	var x          = parseInt(e.clientX);
 	var y          = parseInt(e.clientY);
 	var topBG      = document.getElementById('main_bg_middle4');
@@ -72,7 +72,7 @@ var moveTopBG4 = (e) => {
 	console.log('x: ' + xSaved + ' y: ' + ySaved);
 };
 
-var clearMove4 = () => {
+var clearMove4 = function() {
 	var topBG   = document.getElementById('main_bg_middle4');
 
 	topBG.style.transform    = 'translate3d(-50%, -50%, 0)';
@@ -80,7 +80,7 @@ var clearMove4 = () => {
 };
 
 // WORK - Functions
-var showWork = () => {
+var showWork = function() {
 	var mainHome  			  = document.getElementById('main_home');
 	var mainWork   			  = document.getElementById('main_work');
 	var mainLang 			  = document.getElementById('main_lang');
@@ -114,8 +114,8 @@ var showWork = () => {
 	}		
 };
 
-	// WORK :: Portfolio 1 
-	var showPort1 = () => {
+	// WORK :: Portfolio 1
+	var showPort1 = function() {
 		var mainPort1    		   = document.getElementById('main_work_port1');
 		var portFade     		   = document.getElementsByClassName('port');
 		var mainBgB    			   = document.querySelector('body');
@@ -128,7 +128,7 @@ var showWork = () => {
 		}, 100);
 	};
 
-	var hidePort1 = () => {
+	var hidePort1 = function() {
 		var mainPort1              = document.getElementById('main_work_port1');
 		var portFade               = document.getElementsByClassName('port');
 		var mainBgB    			   = document.querySelector('body');
@@ -138,8 +138,8 @@ var showWork = () => {
 		mainBgB.classList     	   = '';
 	};
 
-	// WORK :: Portfolio 2 
-	var showPort2 = () => {
+	// WORK :: Portfolio 2
+	var showPort2 = function() {
 		var mainPort1              = document.getElementById('main_work_port2');
 		var portFade               = document.getElementsByClassName('port');
 		var mainBgB    			   = document.querySelector('body');
@@ -152,7 +152,7 @@ var showWork = () => {
 		}, 100);
 	};
 
-	var hidePort2 = () => {
+	var hidePort2 = function() {
 		var mainPort1              = document.getElementById('main_work_port2');
 		var portFade               = document.getElementsByClassName('port');
 		var mainBgB    			   = document.querySelector('body');
@@ -162,8 +162,8 @@ var showWork = () => {
 		mainBgB.classList     	   = '';
 	};
 
-	// WORK :: Portfolio 3 
-	var showPort3 = () => {
+	// WORK :: Portfolio 3
+	var showPort3 = function() {
 		var mainPort1              = document.getElementById('main_work_port3');
 		var portFade               = document.getElementsByClassName('port');
 		var mainBgB    			   = document.querySelector('body');
@@ -176,7 +176,7 @@ var showWork = () => {
 		}, 100);
 	};
 
-	var hidePort3 = () => {
+	var hidePort3 = function() {
 		var mainPort1              = document.getElementById('main_work_port3');
 		var portFade               = document.getElementsByClassName('port');
 		var mainBgB    			   = document.querySelector('body');
@@ -186,8 +186,8 @@ var showWork = () => {
 		mainBgB.classList     	   = '';
 	};
 
-	// WORK :: Portfolio 4 
-	var showPort4 = () => {
+	// WORK :: Portfolio 4
+	var showPort4 = function() {
 		var mainPort1              = document.getElementById('main_work_port4');
 		var portFade               = document.getElementsByClassName('port');
 		var mainBgB    			   = document.querySelector('body');
@@ -200,7 +200,7 @@ var showWork = () => {
 		}, 100);
 	};
 
-	var hidePort4 = () => {
+	var hidePort4 = function() {
 		var mainPort1              = document.getElementById('main_work_port4');
 		var portFade               = document.getElementsByClassName('port');
 		var mainBgB    			   = document.querySelector('body');
@@ -210,8 +210,8 @@ var showWork = () => {
 		mainBgB.classList     	   = '';
 	};
 	
-	// WORK :: Portfolio 5 
-	var showPort5 = () => {
+	// WORK :: Portfolio 5
+	var showPort5 = function() {
 		var mainPort1              = document.getElementById('main_work_port5');
 		var portFade               = document.getElementsByClassName('port');
 		var mainBgB    			   = document.querySelector('body');
@@ -224,7 +224,7 @@ var showWork = () => {
 		}, 100);
 	};
 
-	var hidePort5 = () => {
+	var hidePort5 = function() {
 		var mainPort1              = document.getElementById('main_work_port5');
 		var portFade               = document.getElementsByClassName('port');
 		var mainBgB    			   = document.querySelector('body');
@@ -235,7 +235,7 @@ var showWork = () => {
 	};
 
 // LANGUAGES - Function
-var showLang = () => {
+var showLang = function() {
 	var mainHome   = document.getElementById('main_home');
 	var mainWork   = document.getElementById('main_work');
 	var mainLang   = document.getElementById('main_lang');
@@ -276,7 +276,7 @@ var showLang = () => {
 };
 
 // JPGs - Functions
-var showJpgs = () => {
+var showJpgs = function() {
 	var mainHome   = document.getElementById('main_home');
 	var mainWork   = document.getElementById('main_work');
 	var mainLang   = document.getElementById('main_lang');
@@ -321,7 +321,7 @@ var showJpgs = () => {
 	jpgDivStart.style.backgroundImage = 'url(./img/jpgs/' + countGlobal + '.jpg)';
 	info.innerHTML  = jpgObject[countGlobal];
 
-	var jpgsCarouselR = () => {
+	var jpgsCarouselR = function() {
 		var jpgDiv = document.getElementById('jpgs_photo');
 		var count  = countGlobal++;
 		var info    = document.getElementById('jpgs_info');
@@ -338,7 +338,7 @@ var showJpgs = () => {
 		}
 	};
 
-	var jpgsCarouselL = () => {
+	var jpgsCarouselL = function() {
 		var jpgDiv = document.getElementById('jpgs_photo');
 		var count  = countGlobal--;
 		var info    = document.getElementById('jpgs_info');
@@ -355,7 +355,7 @@ var showJpgs = () => {
 		}
 	};
 
-	var getInfo = () => {
+	var getInfo = function() {
 		var info    = document.getElementById('jpgs_info');
 		var counter = countGlobal;
 
@@ -367,7 +367,7 @@ var showJpgs = () => {
 	};
 
 // ABOUT - Functions
-var showAbout = () => {
+var showAbout = function() {
 	var mainHome   = document.getElementById('main_home');
 	var mainWork   = document.getElementById('main_work');
 	var mainLang   = document.getElementById('main_lang');
@@ -406,7 +406,7 @@ var showAbout = () => {
 	var eng  = document.getElementById('eng');
 	eng.style.animation = 'colorTwirl 2s linear infinite';
 
-	var showEnglish = () => {
+	var showEnglish = function() {
 		var name = document.getElementById('about_name');
 		var engl = document.getElementById('about_english');
 		var japn = document.getElementById('about_japanese');
@@ -432,7 +432,7 @@ var showAbout = () => {
 		}
 	};
 
-	var showJapanese = () => {
+	var showJapanese = function() {
 		var name = document.getElementById('about_name');
 		var engl = document.getElementById('about_english');
 		var japn = document.getElementById('about_japanese');
@@ -459,7 +459,7 @@ var showAbout = () => {
 		}
 	};
 
-	var showKorean = () => {
+	var showKorean = function() {
 		var name = document.getElementById('about_name');
 		var engl = document.getElementById('about_english');
 		var japn = document.getElementById('about_japanese');
@@ -486,7 +486,7 @@ var showAbout = () => {
 	};
 
 // HOME - Functions
-var showHome = () => {
+var showHome = function() {
 	var mainHome   = document.getElementById('main_home');
 	var mainWork   = document.getElementById('main_work');
 	var mainLang   = document.getElementById('main_lang');

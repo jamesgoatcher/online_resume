@@ -1,12 +1,6 @@
 var globalBool = false;
 
-window.onload = () => {
-
-	//Load page
-	// var preLoad = document.getElementById('preload');
-	// var preLoadC = document.getElementById('preload').getElementsByTagName('div')[1];
-	// preLoad.innerHTML = '<div>Please wait...</div><div></div><div></div>';
-	// preLoadC.classList = 'anim';
+window.onload = function() {
 
 	//Load images
 	for(i = 1; i < 20; i++) {
@@ -29,11 +23,3 @@ window.onload = () => {
 	}, 10);
 
 };
-
-//Update the page
-// setTimeout(function() {
-// 	if (globalBool == true) {
-// 		var preLoad2 = document.getElementById('preload');
-// 		preLoad2.style.display = 'none';
-// 	}
-// }, 1000);

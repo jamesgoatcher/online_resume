@@ -29,12 +29,12 @@ var scrollDiv     = document.getElementById('lang_langTech');
 var nextImgIndex  = 0;
 
 //Scroll function
-var changeImg = (e) => {
+var changeImg = function(e) {
 	var evt   = window.event || e;
 	var delta = evt.detail ? evt.detail*(-120) : evt.wheelDelta;
 
-	nextImgIndex              = (delta <= -120) ? nextImgIndex + 1 : nextImgIndex - 1;
-	nextImgIndex              = (nextImgIndex < 0) ? imgArray.length - 1 : (nextImgIndex > imgArray.length - 1) ? 0 : nextImgIndex;
+	nextImgIndex               = (delta <= -120) ? nextImgIndex + 1 : nextImgIndex - 1;
+	nextImgIndex               = (nextImgIndex < 0) ? imgArray.length - 1 : (nextImgIndex > imgArray.length - 1) ? 0 : nextImgIndex;
 	scrollImg1.style.transform = 'rotate(' + imgArray[nextImgIndex] + 'deg)';
 	scrollImg2.style.transform = 'rotate(' + imgArray[nextImgIndex] + 'deg)';
 	scrollImg3.style.transform = 'rotate(' + imgArray[nextImgIndex] + 'deg)';

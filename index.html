@@ -3,13 +3,20 @@
 
 <head>
 	<meta charset="UTF-8">
+	<script>var ie_lte9 = false;</script>
+	<!--[if lte IE 9]>
+		<script>
+			var ie_lte9 = true;
+		</script>
+	<![endif]-->
+	<!-- <div id="preload"></div> -->
 	<link href="https://fonts.googleapis.com/css?family=Inconsolata|Source+Code+Pro|Ubuntu+Mono" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
 	<title>.jpg | James P. Goatcher | .jpg</title>
 </head>
 
 <body onmousemove="moveTopBG(event); moveTopBG4(event)" onmouseout="clearMove(); clearMove4()">
-	<!-- <div id="preload"></div> -->
+
 	<header>
 		<div id="header_logo" onclick="showHome(); clearMove()">.jpg</div>
 		<nav id="header_nav">
@@ -172,6 +179,7 @@
 		</div>
 		<!-- JPGs -->
 		<div id="main_jpgs">
+			<div id="jpgs_title">.jpg by .jpg</div>
 			<div id="jpgs_photo"></div>
 			<div id="jpgs_info"></div>
 			<div id="left" onclick="jpgsCarouselL()"></div>
@@ -207,6 +215,7 @@
 						<li>* ELO　１６００　チェスプレーヤー</li>
 						<li>* 日本語 中級、韓国語初級の語学力を有する</li>
 						<li>* 世界中を旅する人</li>
+						<li>* 言論自由の擁護者</li>
 						<li>* 健康の秘訣は納豆を食べる事です 笑</li>
 					</ul>
 				</div>
