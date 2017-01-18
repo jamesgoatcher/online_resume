@@ -111,6 +111,7 @@ var showWork = function() {
 		mainBgM.style.display 	= 'block';
 		mainBgM.style.backgroundImage = 'url(./img/bg_bottom.jpg)';
 		mainBgB.style.backgroundImage = 'url(./img/bg_middle.png)';
+		mainBgB.classList     	= '';
 	}		
 };
 
